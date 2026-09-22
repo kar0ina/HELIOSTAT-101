@@ -1,5 +1,4 @@
-# HELIOSTAT-101
-Heliostat project
+# HELIOSTAT 101
 # AUTHORS
 Karolina Nowak
 # DESCRIPTION OF THE PROJECT
@@ -36,13 +35,16 @@ Heliostat is a mechanism that has to move the mirror in 2 axes. The designed mec
 > Heliostat works on three different modes: ZERO, NORMAL and TEST.
 
 **ZERO** mode:
+
 This mode is the basic calibration of the two servomotors - the mechanism is set on a deafult positions - base in the centre and the mirror positioned flat.
 
 **NORMAL** mode:
+
 Heliostat works automatically between 08:00 a.m. and 13:00. In these hours it calculates positions for the servos and sends it to Arduino each 20s. If the NORMAL mode is enabled after the working hours it automatically is set to mode ZERO.
 
 **TEST** mode:
-While activating this mode there are several options available.
+
+While activating this mode there are several options available:
 - Manual control of the servomotors
 - Switching to mode ZERO
 - Checking the status of the servomotors position
