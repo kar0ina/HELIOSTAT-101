@@ -15,14 +15,16 @@ Heliostat operates based on the fundamental law of reflection: the angle of inci
 To redirect sunlight from the moving Sun towards a fixed target, the normal vector of the mirror must always bisect the angle between the Sun, the mirror, and the target.
 To simplify - when the Sun moves by an angle α, the mirror rotates by approximately α/2 to maintain the reflected beam in the same direction.
 
-In the python code user sets the desirable fixed target by manually defining the direction and inclination.Using the geographical location, current date and time, Pysolar calculates the Sun’s real-time azimuth and altitude. Based on these values and the predefined target direction, the program determines the required orientation of the mirror.
+In the python code user sets the desirable fixed target by manually defining the direction and inclination. Using the geographical location, current date and time, Pysolar calculates the Sun’s real-time azimuth and altitude. Based on these values and the predefined target direction, the program determines the required orientation of the mirror.
 The oreintation is converted then to the positions the servomotors must take and then the data is transmitted to the Arduino.
 
 To sum up the tech used:
 - Arduino Uno board
 - two micro servomotors MG90S (with metal mechanism)
 
-The Arduino board has to be permanently connected to computer for Heliostat to work.
+> [!IMPORTANT]
+>The Arduino board has to be permanently connected to computer for Heliostat to work.
+
 # STATE OF THE ART
 
 Heliostat is a mechanism that has to move the mirror in 2 axes. The designed mechanism is composed of:
