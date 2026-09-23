@@ -4,7 +4,7 @@ import datetime
 import serial
 from pysolar.solar import get_altitude, get_azimuth
 
-#test
+
 # ============================================================
 # KONFIGURACJA
 # ============================================================
